@@ -5,6 +5,6 @@ import carsharing.entitie.Car;
 import java.util.List;
 
 public interface CarDao {
-    List<Car> getAllCars();
-    void createCar(String car);
+    List<Car> getCars(int companyId);
+    void createCar(String name, int companyId);
 }
