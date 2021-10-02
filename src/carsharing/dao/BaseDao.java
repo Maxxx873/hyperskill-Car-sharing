@@ -25,6 +25,4 @@ public abstract class BaseDao {
 
     protected abstract String getCreateTableSQL();
 
-    protected abstract String dropTableSQL();
-
 }

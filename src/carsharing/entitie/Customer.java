@@ -1,15 +1,22 @@
 package carsharing.entitie;
 
-public class Car {
+public class Customer {
     private int id;
     private String name;
-    private int companyId;
+    private int carId;
 
 
-    public Car(int id, String name, int companyId) {
+    public Customer(int id, String name, int carId) {
         this.id = id;
         this.name = name;
-        this.companyId = companyId;
+        this.carId = carId;
+
+    }
+
+    public Customer(int id, String name) {
+        this.id = id;
+        this.name = name;
+        this.carId = 0;
 
     }
 
@@ -25,13 +32,15 @@ public class Car {
         return name;
     }
 
-    public int getCompanyId() {
-        return companyId;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
+
+    public int getCarId() {
+        return carId;
+    }
+
+
 
     @Override
     public String toString(){
